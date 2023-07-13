@@ -26,7 +26,7 @@ print(fruitdict['banana'])
 print(fruitdict.keys()) #returned a list of keys
 print(fruitdict.values()) #returned a list of values
 
-fruitdict['coconut'] = 100
+fruitdict['coconut'] = 100  #creates a key
 
 for item in fruitdict:      #cycles through the keys
     print(item)
@@ -35,4 +35,21 @@ for item in fruitdict:      #cycles through the keys
 for value in fruitdict.values():
     print(value)
 
-del fruitdict['apple']
+del fruitdict['apple'] #delets a key
+
+fruitdict['alist'] = [1,2,3] # a list inside a dictionary
+print(fruitdict['alist']) 
+alist = [fruitdict, fruitdict, fruitdict] #A list of diction
+print(alist[0])
+
+#CREATE TWO DIFFERENT DICTIONARIES REPRESENTS A POKEMON
+pikachu = {"name":"pikachu", "poketype":['electric'], "hp":[20] }
+charizard = {"name":"charizard", "poketype":['flying','fire'], "hp":[340] }
+
+#CREATE A LIST CONTAIN THE TWO POKEMON
+pokelist = [pikachu,charizard]
+
+#RANDOMLY CHOOSE ONE OF THOSE POKEMON TO PRINT OUT OF THE 
+import random
+num = random.randint(0,1)
+print(pokelist[num])
