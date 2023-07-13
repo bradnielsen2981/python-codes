@@ -52,4 +52,7 @@ pokelist = [pikachu,charizard]
 #RANDOMLY CHOOSE ONE OF THOSE POKEMON TO PRINT OUT OF THE 
 import random
 num = random.randint(0,1)
-print(pokelist[num])
+p = pokelist[num]
+print(p['type'])
+print(p['hp'])
+
